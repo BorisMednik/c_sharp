@@ -1,0 +1,30 @@
+﻿<Window x:Class="Exam.Source.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exam.Source"
+        mc:Ignorable="d"
+          Title="Карточка Компьютера" Height="450" Width="800">
+    <Grid>
+        <Label Content="Назыание" HorizontalAlignment="Left" Height="40" Margin="80,64,0,0" VerticalAlignment="Top" Width="160"/>
+        <TextBox x:Name="aName" HorizontalAlignment="Left" Height="40" Margin="80,104,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="160"/>
+        <Label Content="Процессор" HorizontalAlignment="Center" Height="40" Margin="0,64,0,0" VerticalAlignment="Top" Width="160"/>
+        <TextBox x:Name="aProc" HorizontalAlignment="Center" Height="40" Margin="0,104,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="160"/>
+        <Label Content="Оперативная Память" HorizontalAlignment="Left" Height="40" Margin="80,224,0,0" VerticalAlignment="Top" Width="160"/>
+        <TextBox x:Name="aRam" HorizontalAlignment="Left" Height="40" Margin="80,264,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="160"/>
+        <Label Content="Накопитель" HorizontalAlignment="Center" Height="40" Margin="0,224,0,0" VerticalAlignment="Top" Width="160"/>
+        <TextBox x:Name="aMem" HorizontalAlignment="Center" Height="40" Margin="0,264,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="160"/>
+        <StackPanel Height="40" Margin="0,0,0,8" Orientation="Horizontal"  HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Button Content="Удалить" x:Name="Del" HorizontalAlignment="Left" VerticalAlignment="Top"  Height="40" Width="80" Click="Del_Click"/>
+            <Label Width="50" />
+            <Button Content="Сохранить" x:Name="Saving" HorizontalAlignment="Left"  VerticalAlignment="Top"  Height="40" Width="80" Click="Saving_Click"/>
+
+            <Label Width="50" />
+            <Button Content="Закрыть" x:Name="Closing" HorizontalAlignment="Left"  VerticalAlignment="Top"  Height="40" Width="80" Click="Closing_Click"/>
+            <Label Width="50" />
+            </StackPanel>
+        <Label Content="ID" x:Name="aID" HorizontalAlignment="Left" Margin="80,10,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

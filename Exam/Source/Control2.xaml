@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="Exam.Source.Control2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Exam.Source"
+             mc:Ignorable="d" 
+             d:DesignHeight="250" d:DesignWidth="500">
+    <Grid x:Name="Doubl" Margin="5" MouseLeftButtonDown="MouseLeftButtonDown"   >
+        <StackPanel Orientation="Vertical" Margin="5,5,5,5" Background="AliceBlue">
+            <Label x:Name="UID"  Content="ID"/>
+            <StackPanel Width="450" Height="40"   Orientation="Horizontal"  >
+                <Label Content="Название: "   FontSize="22" FontFamily="Arial Black"/>
+                <Label Content="" x:Name="Uname"  FontSize="22" FontFamily="Arial Black"/>
+            </StackPanel>
+            <StackPanel Width="450" Height="40"   Orientation="Horizontal">
+                <Label Content="процессор: "   FontSize="22" FontFamily="Arial Black"/>
+                <Label Content="" x:Name="UProc"  FontSize="22" FontFamily="Arial Black"/>
+            </StackPanel>
+            <StackPanel Width="450" Height="40"  Orientation="Horizontal">
+                <Label Content="Объем оперативной Памяти: "   FontSize="22" FontFamily="Arial Black"/>
+                <Label Content="" x:Name="URam"  FontSize="22" FontFamily="Arial Black"/>
+            </StackPanel>
+            <StackPanel Width="450" Height="40"   Orientation="Horizontal">
+                <Label Content="Объем Накопителя: "   FontSize="22" FontFamily="Arial Black"/>
+                <Label Content="" x:Name="UMem"  FontSize="22" FontFamily="Arial Black"/>
+            </StackPanel>
+            <Button Content="открыть" HorizontalAlignment="Left"  VerticalAlignment="Top" Click="openButton_Click" Height="35" Width="95"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
